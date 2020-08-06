@@ -27,7 +27,7 @@ resource "aws_instance" "this" {
   ebs_optimized = var.ebs_optimized
 
   lifecycle {
-    ignore_changes = ["ami", "user_data", "user_data_base64"]
+    ignore_changes = [ami, user_data, user_data_base64]
   }
 
   dynamic "root_block_device" {
