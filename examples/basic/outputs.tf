@@ -63,3 +63,23 @@ output "credit_specification_t2_unlimited" {
   value       = module.ec2_with_t2_unlimited.credit_specification
 }
 
+output "metadata_options" {
+  description = "Metadata options for the instance"
+  value       = module.ec2.metadata_options
+}
+
+output "metadata_options_custom" {
+  description = "Customized metadata options for the instance"
+  value       = module.ec2_with_metadata_options.metadata_options
+}
+
+output "credit_specification" {
+  description = "Credit specification of EC2 instance (empty list for not t2 instance types)"
+  value       = module.ec2.credit_specification
+}
+
+output "credit_specification_t2_unlimited" {
+  description = "Credit specification of t2-type EC2 instance"
+  value       = module.ec2_with_t2_unlimited.credit_specification
+}
+

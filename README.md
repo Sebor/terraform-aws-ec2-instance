@@ -94,13 +94,24 @@ data "aws_ami" "ubuntu-xenial" {
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
+<<<<<<< HEAD
 No requirements.
+=======
+| Name | Version |
+|------|---------|
+| terraform | >= 0.12.6 |
+| aws | >= 2.65 |
+>>>>>>> 41d41ea8ef45c28e1c37c99c6c1200b509c509dd
 
 ## Providers
 
 | Name | Version |
 |------|---------|
+<<<<<<< HEAD
 | aws | n/a |
+=======
+| aws | >= 2.65 |
+>>>>>>> 41d41ea8ef45c28e1c37c99c6c1200b509c509dd
 
 ## Inputs
 
@@ -121,6 +132,10 @@ No requirements.
 | ipv6\_address\_count | A number of IPv6 addresses to associate with the primary network interface. Amazon EC2 chooses the IPv6 addresses from the range of your subnet. | `number` | `null` | no |
 | ipv6\_addresses | Specify one or more IPv6 addresses from the range of the subnet to associate with the primary network interface | `list(string)` | `null` | no |
 | key\_name | The key name to use for the instance | `string` | `""` | no |
+<<<<<<< HEAD
+=======
+| metadata\_options | Customize the metadata options of the instance | `map(string)` | `{}` | no |
+>>>>>>> 41d41ea8ef45c28e1c37c99c6c1200b509c509dd
 | monitoring | If true, the launched EC2 instance will have detailed monitoring enabled | `bool` | `false` | no |
 | name | Name to be used on all resources as prefix | `string` | n/a | yes |
 | network\_interface | Customize network interfaces to be attached at instance boot time | `list(map(string))` | `[]` | no |
@@ -153,6 +168,10 @@ No requirements.
 | instance\_state | List of instance states of instances |
 | ipv6\_addresses | List of assigned IPv6 addresses of instances |
 | key\_name | List of key names of instances |
+<<<<<<< HEAD
+=======
+| metadata\_options | List of metadata options of instances |
+>>>>>>> 41d41ea8ef45c28e1c37c99c6c1200b509c509dd
 | password\_data | List of Base-64 encoded encrypted password data for the instance |
 | placement\_group | List of placement groups of instances |
 | primary\_network\_interface\_id | List of IDs of the primary network interface of instances |
